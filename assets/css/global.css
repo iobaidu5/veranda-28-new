@@ -9259,7 +9259,7 @@ nav li.devis a:hover {
 }
 
 section.slider {
-  background-image: url(./img/slide1.jpg);
+  background-image: url(../img/slide1.jpg);
   background-size: cover;
   background-position: center;
   padding: 50px 0px;
@@ -9735,7 +9735,7 @@ section.one .bloc2 h3 {
 }
 
 .numbers {
-  background-image: url(./img/bg1.jpg);
+  background-image: url(.../img/bg1.jpg);
   background-size: cover;
   background-position: center;
 
@@ -9831,7 +9831,7 @@ section.one .bloc3 {
 }
 
 section.avis {
-  background-image: url(./img/bg2.jpg);
+  background-image: url(../img/bg2.jpg);
 
   background-position: center;
   background-position: cover;
@@ -9981,7 +9981,7 @@ section.avis .bx-wrapper .bx-controls-direction a.bx-prev:before {
 }
 
 section.slide {
-  background-image: url(./img/slide2.jpg);
+  background-image: url(../img/slide2.jpg);
   background-size: cover;
   background-position: center;
   padding: 100px 0px;
@@ -10058,16 +10058,16 @@ section.devis2 .form-control {
 
 /**************************************************/
 section.slide2 {
-  background-image: url(./img/slide3.jpg);
+  background-image: url(../img/slide3.jpg);
   padding: 100px 0px;
 }
 
 section.slide3 {
-  background-image: url(./img/slide4.jpg);
+  background-image: url(../img/slide4.jpg);
 }
 
 section.slide4 {
-  background-image: url(./img/slide5.jpg);
+  background-image: url(../img/slide5.jpg);
 }
 
 .dropdown-menu>.active>a,
@@ -10351,7 +10351,7 @@ section.models h3 {
   margin: 0;
   width: 0;
   height: 0;
-  background: url(./img/magnify-alt.png) 50% 50% no-repeat;
+  background: url(../img/magnify-alt.png) 50% 50% no-repeat;
   content: "";
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -10718,7 +10718,7 @@ section.devis2 h2 {
 }
 
 section.slide5 {
-  background-image: url(./img/slide6.jpg);
+  background-image: url(../img/slide6.jpg);
 }
 
 .pagination>.active>a,
