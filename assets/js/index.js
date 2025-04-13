@@ -28,7 +28,7 @@ function fixNav() {
 }
 
   $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".owl2").owlCarousel({
       loop: true,               // Infinite loop
       margin: 10,               // Space between items
       nav: true,                // Show navigation buttons
@@ -36,6 +36,7 @@ function fixNav() {
       autoplay: true,           // Enable auto play
       autoplayTimeout: 3000,    // Auto-play every 3 seconds
       autoplayHoverPause: true, // Pause on hover
+      smartSpeed: 800,  
       navText: [
         "<i class='fa fa-chevron-left'></i>", 
         "<i class='fa fa-chevron-right'></i>"
@@ -48,20 +49,42 @@ function fixNav() {
     });
   });
 
+  $(document).ready(function(){
+    $(".galerie-slider").owlCarousel({
+      loop: true,               // Infinite loop
+      margin: 10,               // Space between items
+      nav: true,                // Show navigation buttons
+      dots: false,               // Show dots
+      autoplay: true,           // Enable auto play
+      autoplayTimeout: 3000,    // Auto-play every 3 seconds
+      autoplayHoverPause: true, // Pause on hover
+      smartSpeed: 800,  
+      navText: [
+        "", 
+        ""
+      ],
+      responsive: {
+        0: { items: 1 },        // 1 item for small screens
+        600: { items: 2 },      // 2 items for tablets
+        1000: { items: 3 }      // 3 items for desktops
+      }
+    });
+  });
 
 
-$('.bootstrap-datepicker input').datepicker({
-  todayBtn: "linked",
-  language: "fr",
-  autoclose: true,
-  todayHighlight: true
-});
+
+// $('.bootstrap-datepicker input').datepicker({
+//   todayBtn: "linked",
+//   language: "fr",
+//   autoclose: true,
+//   todayHighlight: true
+// });
 
 
 
-$('.clockpicker').clockpicker({
-  autoclose: true
-});
+// $('.clockpicker').clockpicker({
+//   autoclose: true
+// });
 
 
 
@@ -109,37 +132,20 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function() {
+  // Select all anchor elements
+  $("a").each(function() {
+    // Extract the href attribute value and remove any leading/trailing spaces
+    var href = $(this).attr("href").trim();
 
-var conf_name = "djmariageparis.fr";
-var conf_email = "contact@clyevents.fr";
-var modal_rgpd = '<div class="modal fade" id="modal-rgpd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">' +
-  '        <div class="modal-dialog" role="document">' +
-  '            <div class="modal-content">' +
-  '                <div class="modal-body">' +
-  '                  * En cochant cette case, j’accepte que mes données personnelles soient collectées et traitées par le service commercial de ' + conf_name + '.' +
-  '                   Leur traitement a pour finalité de traiter votre demande spécifique.<br>' +
-  '                   Les données collectées sont conservées pour la durée de nos relations commerciales + 1 an. Conformément à la loi' +
-  '                   « informatique et libertés », vous pouvez exercer votre droit d’accès aux données vous concernant et les faire rectifier' +
-  '                   auprès de notre référent à <a href="mailto:"' + conf_email + '">' + conf_email + '</a>.<br>' +
-  '                   Vous disposez également d’un droit de rectification, à l’oubli, à la portabilité, de limitation ou d’opposition auprès de notre référent à ' +
-  '                   <a href="mailto:' + conf_email + '">' + conf_email + '</a>.<br><br>' +
-  '                   En dernier recours, vous pouvez déposer une réclamation auprès de la CNIL.' +
-  '                </div>' +
-  '                <div class="modal-footer">' +
-  '                    <div class="form-group text-center">' +
-  '                        <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Fermer</button>' +
-  '                    </div>' +
-  '                </div>' +
-  '            </div>' +
-  '        </div>' +
-  '    </div>';
-$(document).ready(function () {
-  $(".info-rgpd label").after(function () {
-    return '&nbsp;<a href="#" data-toggle="modal" data-target="#modal-rgpd"><i class="fa fa-info-circle"></i></a>' + modal_rgpd;
+    // Remove the '{%', '%}' and spaces from the href value to get the title
+    var title = href.replace(/\{%\s*|\s*%\}/g, '').trim();
+
+    // Set the title attribute of the anchor element
+    $(this).attr("title", title);
   });
 });
 
-new WOW().init();
 
 
 
@@ -178,6 +184,9 @@ $('a[href^="#abs"]').click(function () {
   }, 'slow');
   return false;
 });
+
+
+
 
 
 $(document).ready(function () {

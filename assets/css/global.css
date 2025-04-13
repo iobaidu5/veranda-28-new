@@ -2131,7 +2131,7 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 34px !important;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -3843,7 +3843,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px
+  border-radius: 4px;
+  margin-top: -45px !important;
 }
 
 .navbar-toggle:focus {
@@ -6261,8 +6262,8 @@ button.close {
  */
 @font-face {
   font-family: FontAwesome;
-  src: url(../fonts/fontawesome-webfont.eot?v=4.0.3);
-  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff?v=4.0.3) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.0.3) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular) format('svg');
+  src: url(./fonts/fontawesome-webfont.eot?v=4.0.3);
+  src: url(./fonts/fontawesome-webfont.eot?#iefix&v=4.0.3) format('embedded-opentype'), url(./fonts/fontawesome-webfont.woff?v=4.0.3) format('woff'), url(./fonts/fontawesome-webfont.ttf?v=4.0.3) format('truetype'), url(./fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular) format('svg');
   font-weight: 400;
   font-style: normal
 }
@@ -9239,18 +9240,18 @@ nav li.devis a:hover {
 
 .fixphone {
   position: fixed;
-  bottom: 0px;
+  bottom: 5px;
   right: 10px;
   z-index: 999;
   background-color: #a5005d;
   padding: 10px 30px;
   border-radius: 8px 8px 0 0 !important;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.25) !important;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   z-index: 999999;
-
+  height: 6rem;
 }
 
 #fixphone {
@@ -9259,7 +9260,7 @@ nav li.devis a:hover {
 }
 
 section.slider {
-  background-image: url(../img/slide1.jpg);
+  background-image: url(./img/slide1.jpg);
   background-size: cover;
   background-position: center;
   padding: 50px 0px;
@@ -9291,7 +9292,7 @@ section.slider {
   border-color: #e3e2e7;
   color: #79787f;
   box-shadow: inset 0 0 0 1px #f6f6f6;
-  min-height: 45px;
+  min-height: 45px !important;
   padding: 9.5px 15px 12.5px;
   border: 1px solid #e3e2e7;
   line-height: 1.5;
@@ -9383,7 +9384,7 @@ section.slider .description {
 }
 
 section.one {
-  padding: 50px 0px;
+  padding: 50px 10px;
 }
 
 section.one h2 {
@@ -9735,7 +9736,7 @@ section.one .bloc2 h3 {
 }
 
 .numbers {
-  background-image: url(.../img/bg1.jpg);
+  background-image: url(./img/bg1.jpg);
   background-size: cover;
   background-position: center;
 
@@ -9831,7 +9832,7 @@ section.one .bloc3 {
 }
 
 section.avis {
-  background-image: url(../img/bg2.jpg);
+  background-image: url(./img/bg2.jpg);
 
   background-position: center;
   background-position: cover;
@@ -9848,6 +9849,7 @@ section.avis h2 {
   background-color: #fff;
   padding: 30px;
   position: relative;
+  height: 100% !important;
 }
 
 .avi i {
@@ -9981,7 +9983,7 @@ section.avis .bx-wrapper .bx-controls-direction a.bx-prev:before {
 }
 
 section.slide {
-  background-image: url(../img/slide2.jpg);
+  background-image: url(./img/slide2.jpg);
   background-size: cover;
   background-position: center;
   padding: 100px 0px;
@@ -10036,7 +10038,7 @@ section.devis2 .form-control {
   border-color: #e3e2e7;
   color: #79787f;
   box-shadow: inset 0 0 0 1px #f6f6f6;
-  min-height: 45px;
+  min-height: 45px !important;
   padding: 9.5px 15px 12.5px;
   border: 1px solid #e3e2e7;
   line-height: 1.5;
@@ -10058,16 +10060,16 @@ section.devis2 .form-control {
 
 /**************************************************/
 section.slide2 {
-  background-image: url(../img/slide3.jpg);
+  background-image: url(./img/slide3.jpg);
   padding: 100px 0px;
 }
 
 section.slide3 {
-  background-image: url(../img/slide4.jpg);
+  background-image: url(./img/slide4.jpg);
 }
 
 section.slide4 {
-  background-image: url(../img/slide5.jpg);
+  background-image: url(./img/slide5.jpg);
 }
 
 .dropdown-menu>.active>a,
@@ -10351,7 +10353,7 @@ section.models h3 {
   margin: 0;
   width: 0;
   height: 0;
-  background: url(../img/magnify-alt.png) 50% 50% no-repeat;
+  background: url(./img/magnify-alt.png) 50% 50% no-repeat;
   content: "";
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -10405,10 +10407,6 @@ nav ul.dropdown-menu li {
 
 
 
-
-
-
-
 .icon2 {
   margin-bottom: 30px !important;
 }
@@ -10428,7 +10426,7 @@ nav ul.dropdown-menu li {
 
 
   .m-y-4{
-    margin: 20px 0 !important;
+    margin: 5px 0 !important;
     float: left !important;
   }
 
@@ -10440,6 +10438,8 @@ nav ul.dropdown-menu li {
     overflow-x: hidden !important;
   }
 }
+
+
 
 @media (max-width: 767px) {
   .bloc1 .hover {
@@ -10718,7 +10718,7 @@ section.devis2 h2 {
 }
 
 section.slide5 {
-  background-image: url(../img/slide6.jpg);
+  background-image: url(./img/slide6.jpg);
 }
 
 .pagination>.active>a,
@@ -10963,4 +10963,47 @@ section.one1.bis a.call-to-action-btn {
 
 section.one1.bis a.call-to-action-btn:hover {
   border-radius: 0px;
+}
+
+
+
+/* Position arrows outside slider */
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  pointer-events: auto;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+}
+
+/* Prev arrow */
+.owl-nav .owl-prev {
+  left: -40px !important;
+  background: url('./img/controls.png') 0px -32px no-repeat !important;
+}
+
+/* Next arrow */
+.owl-nav .owl-next {
+  right: -50px !important;
+  background: url('./img/controls.png') -43px -32px no-repeat !important;
+}
+
+
+.h-100{
+  height: 100% !important;
 }
