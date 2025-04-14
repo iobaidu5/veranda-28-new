@@ -2761,12 +2761,12 @@ input[type="submit"].btn-block {
  */
 @font-face {
   font-family: FontAwesome;
-  src: url(./fonts/fontawesome-webfont.eot?v=4.0.3);
-  src: url(./fonts/fontawesome-webfont.eot?#iefix&v=4.0.3)
+  src: url(../fonts/fontawesome-webfont.eot?v=4.0.3);
+  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3)
       format("embedded-opentype"),
-    url(./fonts/fontawesome-webfont.woff?v=4.0.3) format("woff"),
-    url(./fonts/fontawesome-webfont.ttf?v=4.0.3) format("truetype"),
-    url(./fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular)
+    url(../fonts/fontawesome-webfont.woff?v=4.0.3) format("woff"),
+    url(../fonts/fontawesome-webfont.ttf?v=4.0.3) format("truetype"),
+    url(../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular)
       format("svg");
   font-weight: 400;
   font-style: normal;
@@ -4891,7 +4891,7 @@ img.pull-right {
 header.slider {
   height: auto;
   min-height: 900px;
-  background: url(./img/bandeau00.jpg) center no-repeat;
+  background: url(../img/bandeau00.jpg) center no-repeat;
   background-size: cover;
 }
 @media only screen and (min-width: 768px) {
@@ -5446,7 +5446,7 @@ a:visited {
   box-shadow: none;
 }
 section.one.bgform {
-  background: url(./img/form-bg.jpg) center center;
+  background: url(../img/form-bg.jpg) center center;
   background-size: cover;
 }
 section.one.bgform h2,
@@ -5484,7 +5484,7 @@ section.one.parallax1,
 section.one.parallax2 {
   padding: 120px 0;
   position: relative;
-  background: url(./img/parrallax4.jpg) fixed no-repeat center;
+  background: url(../img/parrallax4.jpg) fixed no-repeat center;
   background-size: cover;
 }
 section.one.parallax1 h2,
@@ -5499,7 +5499,7 @@ section.one.parallax2 h3 {
   font-weight: 400;
 }
 section.one.parallax1 {
-  background: url(./img/parralax2.jpg) no-repeat center;
+  background: url(../img/parralax2.jpg) no-repeat center;
   background-size: cover;
 }
 .intro {
@@ -5795,7 +5795,7 @@ h3 {
 .mini-slider {
   position: relative;
   padding: 195px 0;
-  background: url(./img/bandeau00_mini.jpg) fixed no-repeat center;
+  background: url(../img/bandeau00_mini.jpg) fixed no-repeat center;
   background-size: cover;
 }
 .mini-slider h1 {
@@ -5900,7 +5900,7 @@ section.one .avis i {
 .ico5,
 .ico6 {
   display: inline-block;
-  background: url(./img/sprite.png) no-repeat;
+  background: url(../img/sprite.png) no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
@@ -5950,7 +5950,7 @@ section.one .texte3 h3 {
     display: none;
   }
   header.slider {
-    background: url(./img/bandeau00_mobile.jpg) center no-repeat;
+    background: url(../img/bandeau00_mobile.jpg) center no-repeat;
     background-size: cover;
   }
 }

@@ -186,6 +186,19 @@ $('a[href^="#abs"]').click(function () {
 });
 
 
+$(window).scroll(function(){
+  if($(document).scrollTop()>40){
+  $("#fixphone").slideDown(300);
+  }
+  else{
+  $("#fixphone").slideUp(300);
+  }
+  });
+
+  $('.count').counterUp({
+    delay: 10,
+    time: 2000
+});
 
 
 
