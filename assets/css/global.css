@@ -11049,3 +11049,15 @@ section.one1.bis a.call-to-action-btn:hover {
   height: 100% !important;
   object-fit: cover !important;
 }
+
+
+  @media (max-width: 990px) {
+    .to-be-full {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .no-pad-990{
+      padding: 2px !important;
+    }
+  }
